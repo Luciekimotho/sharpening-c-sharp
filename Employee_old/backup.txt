@@ -1,0 +1,157 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+
+namespace Employees
+{
+    public class Employee
+    {
+        string empId;
+        string managerId;
+        int salary;
+        int ceoCount = 0;
+
+        Dictionary<string, List<string>> managers = new Dictionary<string, List<string>>();
+        Dictionary<string, Employee> employees = new Dictionary<string, Employee>();
+
+        public Employee()
+        {
+
+        }
+        public Employee(string csvString)
+        {
+            //Validate csv
+            validateCsv(csvString);
+
+        }
+
+        public string GetId()
+        {
+            return empId;
+        }
+
+        public string GetManager()
+        {
+            return managerId;
+        }
+
+        public int GetSalary()
+        {
+            return salary;
+        }
+
+        public Dictionary<string, Employee> GetEmployee()
+        {
+            return employees;
+        }
+
+        public Dictionary<string, List<string>> GetManagers()
+        {
+            return managers;
+        }
+
+        public void validateCsv(String csvString)
+        {
+            StringReader stringReader = new StringReader(csvString);
+
+            // Given the CSV is in the format employeeId, managerId, salary
+            while (stringReader.Peek() > -1)
+            {
+                String row = stringReader.ReadLine();
+                String[] param = row.Split(',');
+                int paramLength = param.Length;
+
+                empId = param[0];
+
+                //Validation
+                //Validate salaries to be integers
+                try
+                {
+                    salary = int.Parse(param[2]);
+                }
+                catch (Exception e)
+                {
+                    throw new ArgumentException(e.Message + "Salaries need to be integers");
+                }
+
+                //One employee does not report to more than one manager.
+                if (paramLength > 3 && (int.Parse(param[2]).Equals(typeof(string))))
+                {
+                    throw new Exception("Employee reporting to more than one manager");
+                }
+
+                //There is only one CEO, i.e. only one employee with no manager.
+                if (ceoCount > 1)
+                {
+                    throw new Exception("There should only be one CEO");
+                }
+                else if (param[1] == "" && ceoCount <= 2)
+                {
+                    ceoCount++;
+                    managerId = param[1];
+                }
+                else
+                {
+                    managerId = param[1];
+                }
+
+                if (empId == null || empId == "")
+                {
+                    throw new Exception("All managers should be employees");
+                }
+
+                if (managerId != "")
+                {
+                    addManager(managerId, empId);
+                }
+                employees.Add(empId, createEmployee(empId, managerId, salary));
+            } 
+            
+        }
+
+        public Employee createEmployee(String emplID, String manID, int sal)
+        {
+            Employee employee = new Employee();
+            employee.empId = emplID;
+            employee.managerId = manID;
+            employee.salary = sal;
+            return employee;
+        }
+
+        public void addManager(String managerID, String employeeID){
+            if (managers.ContainsKey(managerID))
+            {
+                managers[managerID].Add(employeeID);
+            }
+            else
+            {
+                List<string> junior = new List<string>() { employeeID };
+                managers.Add(managerID, junior);
+            }
+        }
+
+        public long managerBudget(String managerId)
+        {
+            long budget = 0;
+            if (!managers.ContainsKey(managerId))
+            {
+                budget = GetSalary();
+            }
+            else
+            {
+                foreach(string manager in managers[managerId])
+                {
+                    budget += managerBudget(manager);
+                }
+                budget += GetSalary();
+            }
+            return budget;
+        }
+
+
+    }
+
+    
+    }
+
+

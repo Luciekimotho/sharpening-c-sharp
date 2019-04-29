@@ -1,0 +1,13 @@
+C:\Users\Abby\source\repos\Employee2\Employee2\obj\Debug\netcoreapp2.1\Employee2.csprojAssemblyReference.cache
+C:\Users\Abby\source\repos\Employee2\Employee2\obj\Debug\netcoreapp2.1\Employee2.csproj.CoreCompileInputs.cache
+C:\Users\Abby\source\repos\Employee2\Employee2\obj\Debug\netcoreapp2.1\Employee2.AssemblyInfoInputs.cache
+C:\Users\Abby\source\repos\Employee2\Employee2\obj\Debug\netcoreapp2.1\Employee2.AssemblyInfo.cs
+C:\Users\Abby\source\repos\Employee2\Employee2\bin\Debug\netcoreapp2.1\Employee2.deps.json
+C:\Users\Abby\source\repos\Employee2\Employee2\bin\Debug\netcoreapp2.1\Employee2.runtimeconfig.json
+C:\Users\Abby\source\repos\Employee2\Employee2\bin\Debug\netcoreapp2.1\Employee2.runtimeconfig.dev.json
+C:\Users\Abby\source\repos\Employee2\Employee2\bin\Debug\netcoreapp2.1\Employee2.dll
+C:\Users\Abby\source\repos\Employee2\Employee2\bin\Debug\netcoreapp2.1\Employee2.pdb
+C:\Users\Abby\source\repos\Employee2\Employee2\bin\Debug\netcoreapp2.1\Employees.dll
+C:\Users\Abby\source\repos\Employee2\Employee2\obj\Debug\netcoreapp2.1\Employee2.csproj.CopyComplete
+C:\Users\Abby\source\repos\Employee2\Employee2\obj\Debug\netcoreapp2.1\Employee2.dll
+C:\Users\Abby\source\repos\Employee2\Employee2\obj\Debug\netcoreapp2.1\Employee2.pdb

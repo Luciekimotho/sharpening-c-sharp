@@ -1,0 +1,7 @@
+C:\Users\Abby\source\repos\CodingPractice\CodingPractice\bin\Debug\CodingPractice.exe.config
+C:\Users\Abby\source\repos\CodingPractice\CodingPractice\bin\Debug\CodingPractice.exe
+C:\Users\Abby\source\repos\CodingPractice\CodingPractice\bin\Debug\CodingPractice.pdb
+C:\Users\Abby\source\repos\CodingPractice\CodingPractice\obj\Debug\CodingPractice.csprojAssemblyReference.cache
+C:\Users\Abby\source\repos\CodingPractice\CodingPractice\obj\Debug\CodingPractice.csproj.CoreCompileInputs.cache
+C:\Users\Abby\source\repos\CodingPractice\CodingPractice\obj\Debug\CodingPractice.exe
+C:\Users\Abby\source\repos\CodingPractice\CodingPractice\obj\Debug\CodingPractice.pdb

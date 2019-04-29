@@ -1,0 +1,133 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.IO;
+using System.Data;
+using Employees;
+
+namespace EmployeeHierachy
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Employee employees = new Employee();
+            long budget = 0;
+            //String fileLocation = "C:/Users/Abby/source/repos/EmployeeHierachy/EmployeeHierachy/employee.csv";
+            //var reader = new StreamReader(File.OpenRead(fileLocation));
+            Dictionary<string, List<string>> managersDict = new Dictionary<string, List<string>>(); StringBuilder csvString;
+            Dictionary<string, Employee> empDict = new Dictionary<string, Employee>();
+
+            csvString = new StringBuilder();
+
+            csvString.AppendLine("Employee4,Employee2,500");
+            csvString.AppendLine("Employee3,Employee1,500");
+            csvString.AppendLine("Employee1,,1000");
+            csvString.AppendLine("Employee5,Employee1,500");
+            csvString.AppendLine("Employee2,Employee1,800");
+
+
+            employees = new Employee(csvString.ToString());
+
+            managersDict = employees.GetManagers();
+            empDict = employees.GetEmployee();
+
+            foreach (KeyValuePair<string, Employee> item in empDict)
+            {
+                Console.WriteLine("Key: {0}, Value: {1}", item.Key, item.Value);
+
+                budget = item.Value.managerBudget("Employee1");
+            }
+
+            Console.WriteLine(budget);
+        }
+
+
+        public static void validateCsv(String csvString)
+        {
+            String employee, manager, ceo = "";
+            int salary = 0;
+            int ceoCount = 0;
+
+            var param = csvString.Split(',');
+            int paramLength = param.Length;
+            //foreach (String value in param)
+            //{
+            //    //Console.WriteLine(value);
+
+            //}
+            employee = param[0];
+            manager = param[1];
+
+
+            //Validate salaries to be integers
+            try
+            {
+                salary = int.Parse(param[2]);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            //One employee does not report to more than one manager.
+            if (paramLength > 3 && (int.Parse(param[2]).Equals(typeof(string))))
+            {
+                Console.WriteLine("More than 3 parameters");
+            }
+            
+            //There is only one CEO, i.e. only one employee with no manager.
+            if (manager == "")
+            {
+                ceoCount++;
+                Console.WriteLine("\nThis is a CEO");
+                Console.Write("Employee Id: "+ employee + " Managers ID: " + manager + " Salary: " + salary + '\n');
+                if(ceoCount > 1)
+                {
+                    Console.WriteLine("\nInvalid, there should only be one CEO ");
+                    
+                }
+            }
+
+            Console.WriteLine("\nNormal employee");
+            Console.Write("Employee Id: " + employee + " Managers ID: " + manager + " Salary: " + salary + '\n');
+
+
+            //There is no circular reference, i.e. a first employee reporting to a second employee 
+            //that is also under the first employee.
+
+
+
+            //There is no manager that is not an employee, i.e. all managers are also listed in the employee column.
+            if (employee == null)
+            {
+                Console.WriteLine("All managers should be employees");
+            }
+
+
+            //Console.Write(employee + " "+ manager + " " + salary + '\n');
+
+        }
+
+        public static void getEmployees(String managerId)
+        {
+
+        }
+
+
+        //public static String readCsv(String fileLocation)
+        //{
+        //    var reader = new StreamReader(File.OpenRead(fileLocation));
+
+        //    String employee = "";
+        //    while (!reader.EndOfStream)
+        //    {
+        //        employee = reader.ReadLine();
+        //        var values = employee.Split(',');
+        //        //Console.WriteLine(employee);
+        //    }
+        //    return employee;
+        //}
+    }
+}

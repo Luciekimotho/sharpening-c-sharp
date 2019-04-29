@@ -1,0 +1,8 @@
+C:\Users\Abby\source\repos\EmployeeTest\EmployeeTest\bin\Debug\EmployeeTest.exe.config
+C:\Users\Abby\source\repos\EmployeeTest\EmployeeTest\bin\Debug\EmployeeTest.exe
+C:\Users\Abby\source\repos\EmployeeTest\EmployeeTest\bin\Debug\EmployeeTest.pdb
+C:\Users\Abby\source\repos\EmployeeTest\EmployeeTest\bin\Debug\Employees.dll
+C:\Users\Abby\source\repos\EmployeeTest\EmployeeTest\obj\Debug\Employees.csproj.CoreCompileInputs.cache
+C:\Users\Abby\source\repos\EmployeeTest\EmployeeTest\obj\Debug\Employees.csproj.CopyComplete
+C:\Users\Abby\source\repos\EmployeeTest\EmployeeTest\obj\Debug\EmployeeTest.exe
+C:\Users\Abby\source\repos\EmployeeTest\EmployeeTest\obj\Debug\EmployeeTest.pdb

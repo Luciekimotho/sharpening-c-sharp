@@ -1,0 +1,10 @@
+C:\Users\Abby\source\repos\CalcConsole\CalcConsole\bin\Debug\CalcConsole.exe.config
+C:\Users\Abby\source\repos\CalcConsole\CalcConsole\bin\Debug\CalcConsole.exe
+C:\Users\Abby\source\repos\CalcConsole\CalcConsole\bin\Debug\CalcConsole.pdb
+C:\Users\Abby\source\repos\CalcConsole\CalcConsole\bin\Debug\Calculator.dll
+C:\Users\Abby\source\repos\CalcConsole\CalcConsole\bin\Debug\Calculator.pdb
+C:\Users\Abby\source\repos\CalcConsole\CalcConsole\obj\Debug\CalcConsole.csproj.CoreCompileInputs.cache
+C:\Users\Abby\source\repos\CalcConsole\CalcConsole\obj\Debug\CalcConsole.csproj.CopyComplete
+C:\Users\Abby\source\repos\CalcConsole\CalcConsole\obj\Debug\CalcConsole.exe
+C:\Users\Abby\source\repos\CalcConsole\CalcConsole\obj\Debug\CalcConsole.pdb
+C:\Users\Abby\source\repos\CalcConsole\CalcConsole\obj\Debug\CalcConsole.csprojAssemblyReference.cache

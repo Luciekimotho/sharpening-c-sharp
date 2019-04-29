@@ -1,0 +1,9 @@
+C:\Users\Abby\source\repos\Employee\Employee\bin\Debug\netstandard2.0\Employee.deps.json
+C:\Users\Abby\source\repos\Employee\Employee\bin\Debug\netstandard2.0\Employee.dll
+C:\Users\Abby\source\repos\Employee\Employee\bin\Debug\netstandard2.0\Employee.pdb
+C:\Users\Abby\source\repos\Employee\Employee\obj\Debug\netstandard2.0\Employee.csprojAssemblyReference.cache
+C:\Users\Abby\source\repos\Employee\Employee\obj\Debug\netstandard2.0\Employee.csproj.CoreCompileInputs.cache
+C:\Users\Abby\source\repos\Employee\Employee\obj\Debug\netstandard2.0\Employee.AssemblyInfoInputs.cache
+C:\Users\Abby\source\repos\Employee\Employee\obj\Debug\netstandard2.0\Employee.AssemblyInfo.cs
+C:\Users\Abby\source\repos\Employee\Employee\obj\Debug\netstandard2.0\Employee.dll
+C:\Users\Abby\source\repos\Employee\Employee\obj\Debug\netstandard2.0\Employee.pdb

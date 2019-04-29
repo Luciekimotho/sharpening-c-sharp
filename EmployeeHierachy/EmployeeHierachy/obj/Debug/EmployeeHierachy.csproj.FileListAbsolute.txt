@@ -1,0 +1,10 @@
+C:\Users\Abby\source\repos\EmployeeHierachy\EmployeeHierachy\bin\Debug\EmployeeHierachy.exe.config
+C:\Users\Abby\source\repos\EmployeeHierachy\EmployeeHierachy\bin\Debug\EmployeeHierachy.exe
+C:\Users\Abby\source\repos\EmployeeHierachy\EmployeeHierachy\bin\Debug\EmployeeHierachy.pdb
+C:\Users\Abby\source\repos\EmployeeHierachy\EmployeeHierachy\obj\Debug\EmployeeHierachy.csprojAssemblyReference.cache
+C:\Users\Abby\source\repos\EmployeeHierachy\EmployeeHierachy\obj\Debug\EmployeeHierachy.csproj.CoreCompileInputs.cache
+C:\Users\Abby\source\repos\EmployeeHierachy\EmployeeHierachy\obj\Debug\EmployeeHierachy.exe
+C:\Users\Abby\source\repos\EmployeeHierachy\EmployeeHierachy\obj\Debug\EmployeeHierachy.pdb
+C:\Users\Abby\source\repos\EmployeeHierachy\EmployeeHierachy\obj\Debug\EmployeeHierachy.csproj.CopyComplete
+C:\Users\Abby\source\repos\EmployeeHierachy\EmployeeHierachy\bin\Debug\Employee.dll
+C:\Users\Abby\source\repos\EmployeeHierachy\EmployeeHierachy\bin\Debug\Employee.pdb

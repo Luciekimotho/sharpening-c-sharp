@@ -1,0 +1,6 @@
+C:\Users\Abby\source\repos\CarSales\CarSales\bin\Debug\CarSales.dacpac
+C:\Users\Abby\source\repos\CarSales\CarSales\bin\Debug\CarSales.dll
+C:\Users\Abby\source\repos\CarSales\CarSales\bin\Debug\CarSales.pdb
+C:\Users\Abby\source\repos\CarSales\CarSales\obj\Debug\CarSales.dll
+C:\Users\Abby\source\repos\CarSales\CarSales\obj\Debug\CarSales.pdb
+C:\Users\Abby\source\repos\CarSales\CarSales\obj\Debug\CarSales.sqlprojAssemblyReference.cache
